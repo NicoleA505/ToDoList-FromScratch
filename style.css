@@ -1,0 +1,63 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+}
+
+.intro {
+  text-align: center;
+  font-family: "Roboto", Helvetica, Arial, sans-serif;
+  margin: 50px 0px;
+}
+
+.input-div {
+  width: 50%;
+  margin: 0 auto;
+}
+
+#taskList {
+  width: 50%;
+  margin: 20px auto;
+  /* list-style: none; */
+}
+
+#taskList li {
+  display: flex;
+  justify-content: space-between;
+  list-style-type: none;
+  border: 1px solid #999;
+  border-radius: 10px;
+  padding: 15px;
+  margin: 10px 0px;
+  font-size: 1.3rem;
+}
+
+.listItemText {
+  flex-grow: 6;
+}
+
+.remove {
+  padding: 5px 5px;
+  flex-grow: 1;
+}
+
+.checked {
+  background-color: #999;
+  color: #fff;
+}
+
+.checked span {
+  text-decoration: line-through;
+}
+
+/* Add a "checked" mark when clicked on */
+ul li.checked::before {
+  content: "\002714";
+  top: 10px;
+  left: 16px;
+  /* transform: rotate(45deg); */
+  height: 15px;
+  width: 7px;
+}
